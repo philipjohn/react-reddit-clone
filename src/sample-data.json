@@ -1,0 +1,32 @@
+[
+	{
+		"id": 1,
+		"title": "React in patterns - List of design patterns/techniques used while developing with React",
+		"url": "https://github.com/krasimir/react-in-patterns",
+		"image": "http://placehold.it/64x64",
+		"published": "Mon, 13 Dec 2021 01:06:00 GMT",
+		"author": "magenta_placenta",
+		"comments": 1,
+		"votes": 18
+	},
+	{
+		"id": 2,
+		"title": "Netlify: Our conversion from Angular to React",
+		"url": "https://www.netlify.com/blog/2016/07/26/our-conversion-from-angular-to-react/",
+		"image": "http://placehold.it/64x64",
+		"published": "Mon, 13 Dec 2021 06:04:00 GMT",
+		"author": "brianllamar",
+		"comments": 10,
+		"votes": 22
+	},
+	{
+		"id": 3,
+		"title": "Redux vs MobX vs Flux cs... Do you even need that?",
+		"url": "https://devsday.ru/blog/details/45695",
+		"image": "http://placehold.it/64x64",
+		"published": "Mon, 13 Dec 2021 07:08:00 GMT",
+		"author": "goshakkk.name",
+		"comments": 0,
+		"votes": 7
+	}
+]

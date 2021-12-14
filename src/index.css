@@ -1,13 +1,96 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
+  background-color: lightgrey;
+  margin-top: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  max-width: 920px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 0.5em;
+  box-shadow: 10px 5px 12px -6px gray, -10px -5px 12px -6px gray;
+}
+
+.post-list {
+  padding-left: 0;
+}
+
+.post {
+  list-style-type: none;
+  display: block;
+  clear: both;
+}
+
+.post-details {
+  padding-left: 45px;
+}
+
+.voting-controls {
+  max-width: 32px;
+  text-align: center;
+  float: left;
+  min-height: 170px;
+  margin-right: 15px;
+}
+
+.voting-controls button {
+  font-size: 1.5em;
+  margin: 0.3em 0;
+  background: none;
+  border: 0;
+}
+
+.voting-controls button:first-child {
+  margin-top: 0;
+}
+
+.voting-controls button:hover {
+  color: darkgrey;
+}
+
+.voting-controls button {
+  color: lightgray;
+}
+
+.post-image {
+  float: left;
+  margin-right: 10px;
+  min-height: 170px;
+}
+
+.post-title {
+  display: inline;
+  font-size: 1.2em;
+}
+
+.post-title a {
+  text-decoration: none;
+  color: #dd8511;
+  font-size: ;
+  font-weight: normal;
+}
+
+.post-hostname {
+  display: inline;
+  margin-left: 0.5em;
+  color: grey;
+}
+
+.post-meta {
+  color: grey;
+}
+
+.comments-count {
+  margin-right: 1em;
+}
+
+.comments-count a {
+  color: #dd8511;
+  font-weight: bold;
+}
+
+.post-action-links a {
+  margin-right: 0.3em;
+  color: grey;
 }
