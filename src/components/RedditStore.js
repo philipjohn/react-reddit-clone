@@ -1,29 +1,33 @@
-import React, { createContext, useState } from "react";
-import data from '../sample-data.json'
+import React, { createContext, useEffect, useState } from "react";
+import data from '../reddit-data.json'
 
 export const RedditContext = createContext()
 
 const RedditStore = ({ children }) => {
 
-	const [ posts, setPosts ] = useState(data)
+	const [ posts, setPosts ] = useState([])
 
 	// Sort posts by votes, descending order
-	posts.sort((a, b) => parseFloat(b.votes) - parseFloat(a.votes));
+	useEffect(() => {
+		setPosts(
+			data.data.children.sort((a, b) => parseFloat(b.data.score) - parseFloat(a.data.score))
+		)
+	}, [ posts, setPosts ])
 
 	const onVoteUp = (id) => {
-		let index = posts.findIndex(i => i.id === id)
+		let index = posts.findIndex(i => i.data.id === id)
 		setPosts(posts => {
 			const copy = [ ...posts ]
-			copy[ index ][ "votes" ]++
+			copy[ index ].data.score++
 			return copy
 		})
 	}
 
 	const onVoteDown = (id) => {
-		let index = posts.findIndex(i => i.id === id)
+		let index = posts.findIndex(i => i.data.id === id)
 		setPosts(posts => {
 			const copy = [ ...posts ]
-			copy[ index ][ "votes" ]--
+			copy[ index ].data.score--
 			return copy
 		})
 	}

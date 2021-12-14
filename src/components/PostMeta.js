@@ -8,10 +8,10 @@ const PostMeta = ({ post }) => {
 	return (
 		<div className="post-meta">
 			<p>
-				<RelTime publishedTime={ post.published } />
+				<RelTime publishedTime={ post.created_utc } />
 			</p>
 			<p>
-				<CommentsCount count={ post.comments } />
+				<CommentsCount count={ post.num_comments } />
 				<PostActionLinks id={ post.id } />
 			</p>
 		</div>

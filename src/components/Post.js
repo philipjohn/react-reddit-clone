@@ -8,11 +8,18 @@ const Post = ({ post }) => {
 	return (
 		<>
 			<VotingControls
-				voteCount={ post.votes }
+				voteCount={ post.score }
 				id={ post.id }
 			/>
 			<div className="post-image">
-				<img src={ post.image } alt="foobar" />
+				{ post.thumbnail !== 'self' &&
+					<img
+						src={ post.thumbnail }
+						width={ post.thumbnail_width }
+						height={ post.thumbnail_height }
+						alt="foobar"
+					/>
+				}
 			</div>
 			<div className="post-details">
 				<h2 className="post-title">

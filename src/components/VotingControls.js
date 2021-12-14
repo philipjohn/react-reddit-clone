@@ -27,7 +27,7 @@ const VotingControls = ({ voteCount, id }) => {
 
 VotingControls.propTypes = {
 	voteCount: PropTypes.number.isRequired,
-	id: PropTypes.number.isRequired
+	id: PropTypes.string.isRequired
 }
 
 export default VotingControls
